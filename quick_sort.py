@@ -24,7 +24,7 @@ merge_sort.merge_sort(arr2)
 print("Merge sort: "+str(arr2))
 
 
-def compare_sorts(arr):
+def compare(arr):
     arr_merge = arr.copy()
     arr_quick = arr.copy()
 
@@ -43,8 +43,8 @@ sorted_data = list(range(10000))
 reverse = sorted_data[::-1]
 random = random.sample(range(10000), 10000)
 
-sorted_result = compare_sorts(sorted_data)
-reverse_sorted_result = compare_sorts(reverse)
-random_result = compare_sorts(random)
+sorted_r = compare(sorted_data)
+reverse_r = compare(reverse)
+random_r = compare(random)
 
-print(sorted_result, reverse_sorted_result, random_result)
+print(sorted_r, reverse_r, random_r)
