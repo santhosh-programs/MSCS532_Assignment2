@@ -8,7 +8,7 @@ def quick_sort(arr):
     if len(arr) <= 1:
         return arr
     else:
-        pivot = arr[len(arr) // 2]
+        pivot = arr[len(arr) // 2]   # Choosing middle element as pivot
         left = [x for x in arr if x < pivot]
         middle = [x for x in arr if x == pivot]
         right = [x for x in arr if x > pivot]
@@ -22,6 +22,8 @@ arr2 = [38, 27, 43, 3, 9, 82, 10, 34, 12, 56, 1, 25, 76]
 print("Quick sort"+str(quick_sort(arr)))
 merge_sort.merge_sort(arr2)
 print("Merge sort: "+str(arr2))
+
+# used to compare the two sorts and find the time difference
 
 
 def compare(arr):
@@ -47,4 +49,5 @@ sorted_r = compare(sorted_data)
 reverse_r = compare(reverse)
 random_r = compare(random)
 
+# print the comparison
 print(sorted_r, reverse_r, random_r)
